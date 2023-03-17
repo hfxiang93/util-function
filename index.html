@@ -1,0 +1,50 @@
+<!--
+ * @Descripttion: 
+ * @Author: xianghaifeng
+ * @Date: 2023-03-15 13:57:28
+ * @LastEditors: xianghaifeng
+ * @LastEditTime: 2023-03-17 14:31:26
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    rollup
+</body>
+<script src="./dist/index.umd.js">
+    // import{Storage,DispatchEvent}from '/dist/index.js'
+//     const st = new Storage()
+//     console.log(st)
+      
+//   const od = new DispatchEvent();
+//   od.on("hello", (arg) => {
+//     console.log("hello", arg);
+//   });
+//   od.emit("hello", "ss");
+  
+//   od.once("hello", () => {
+//     console.log("只执行一次");
+//   });
+//   console.log(od.list);
+//   od.off("hello", () => {
+//     console.log("off");
+//   });
+//   console.log(od.list);
+</script>
+<script>
+    console.log(Utils)
+    const sss = new Utils.Storage()
+    const now = new Date().getTime()
+    sss.set('a','{name: 22}',now+5000)
+    console.log(sss.get('a'))
+    const logger = new Utils.Logger()
+    logger.danger(Utils.chunk([1,1,2,2,52,3,1,5,4,3,2],2))
+    logger.danger(Array.from([1,1,2,2,52,3,1,5,4,3,2].slice(0,2)))
+    logger.capsule('wwwwww','sssssssssss')
+</script>
+</html>
