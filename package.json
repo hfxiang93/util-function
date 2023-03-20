@@ -1,5 +1,5 @@
 {
-  "name": "util-function",
+  "name": "@hfxiang/util-function",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.umd.js",
@@ -11,8 +11,16 @@
     "build": "cross-env NODE_ENV=production rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hfxiang93/util-function.git"
+  },
+  "homepage": "https://github.com/hfxiang93/util-function#readme",
+  "keywords": [
+    "util",
+    "function"
+  ],
+  "author": "xianghaifeng",
   "license": "ISC",
   "devDependencies": {
     "@types/rollup": "^0.54.0",
