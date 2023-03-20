@@ -3,7 +3,7 @@
  * @Author: xianghaifeng
  * @Date: 2023-03-20 15:50:43
  * @LastEditors: xianghaifeng
- * @LastEditTime: 2023-03-20 16:19:55
+ * @LastEditTime: 2023-03-20 17:06:45
  */
 interface ListItem {
   id: number;
@@ -20,7 +20,7 @@ interface TreeMap {
 interface WaitPushObj {
   [key: string]: Array<TreeItem>;
 }
-export const createTree = (list: Array<ListItem> = []): Array<TreeItem> => {
+export const listToTree = (list: Array<ListItem> = []): Array<TreeItem> => {
   const tree: Array<TreeItem> = [];
   const map: TreeMap = {};
   const waitPushObj: WaitPushObj = {};
